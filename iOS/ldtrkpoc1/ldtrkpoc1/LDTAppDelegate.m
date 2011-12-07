@@ -38,10 +38,18 @@
     objectManager.client.requestQueue.showsNetworkActivityIndicatorWhenBusy = YES;
     
     RKObjectMapping *widgetMapping = [RKObjectMapping mappingForClass:[LDTWidget class]];
-    [widgetMapping mapKeyPath:@"id" toAttribute:@"widgetID"];
-    [widgetMapping mapKeyPath:@"title" toAttribute:@"title"];
-    [widgetMapping mapKeyPath:@"summary" toAttribute:@"summary"];
-
+//    [widgetMapping mapKeyPath:@"id" toAttribute:@"widgetID"];
+//    [widgetMapping mapKeyPath:@"title" toAttribute:@"title"];
+//    [widgetMapping mapKeyPath:@"summary" toAttribute:@"summary"];
+    [widgetMapping mapKeyPathsToAttributes:@"id", @"widgetID",
+     //@"created_at", @"createdAt",
+     @"title", @"title",
+     @"summary", @"summary",
+     nil];
+    [widgetMapping mapRelationship:@"widget" withMapping:widgetMapping];
+    
+    [objectManager.mappingProvider setMapping:widgetMapping forKeyPath:@"widget"];
+    
     [self.window makeKeyAndVisible];
     return YES;
 }

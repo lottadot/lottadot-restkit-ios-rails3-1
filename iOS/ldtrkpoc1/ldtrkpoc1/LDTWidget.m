@@ -11,7 +11,11 @@
 @implementation LDTWidget
 
 @synthesize widgetID;
-@synthesize name;
+@synthesize title;
 @synthesize summary;
+
+- (NSString*)description {
+	return [NSString stringWithFormat:@"%@ (ID: %@)", self.title, self.widgetID];
+}
 
 @end
