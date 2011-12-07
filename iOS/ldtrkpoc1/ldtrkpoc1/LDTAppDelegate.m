@@ -9,6 +9,7 @@
 #import "LDTAppDelegate.h"
 #import "LDTViewController.h"
 #import <RestKit/RestKit.h>
+#import "LDTWidget.h"
 
 @implementation LDTAppDelegate
 
@@ -21,15 +22,27 @@
     // Override point for customization after application launch.
     self.viewController = [[LDTViewController alloc] initWithNibName:@"LDTViewController" bundle:nil];
     self.window.rootViewController = self.viewController;
-    [self.window makeKeyAndVisible];
+
     
     //Setup Restkit
-    RKClient *client = [RKClient clientWithBaseURL:@"http://localhost:3000"];
+    RKClient *client = [RKClient clientWithBaseURL:LDTHOSTNAME];
     RKLogConfigureByName("RestKit/Network", RKLogLevelDebug);
     RKLogInfo(@"Configured RestKit Client: %@", client);
     // Enable automatic network activity indicator management
     client.requestQueue.showsNetworkActivityIndicatorWhenBusy = YES;
 
+    //Setup Restkit Mappings
+    RKObjectManager* objectManager = [RKObjectManager objectManagerWithBaseURL:LDTHOSTNAME];
+    
+    // Enable automatic network activity indicator management
+    objectManager.client.requestQueue.showsNetworkActivityIndicatorWhenBusy = YES;
+    
+    RKObjectMapping *widgetMapping = [RKObjectMapping mappingForClass:[LDTWidget class]];
+    [widgetMapping mapKeyPath:@"id" toAttribute:@"widgetID"];
+    [widgetMapping mapKeyPath:@"title" toAttribute:@"title"];
+    [widgetMapping mapKeyPath:@"summary" toAttribute:@"summary"];
+
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

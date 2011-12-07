@@ -26,6 +26,8 @@
 		34686868148F2C1C00A0189F /* LDTWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = 34686867148F2C1C00A0189F /* LDTWidget.m */; };
 		34BF3587148F340100AFC17A /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 34686851148F296900A0189F /* libRestKit.a */; };
 		34BF358B148F34F200AFC17A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34BF358A148F34F200AFC17A /* Security.framework */; };
+		34BF35A9148FA1C800AFC17A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34BF35A8148FA1C800AFC17A /* CoreData.framework */; };
+		34BF35AB148FA21100AFC17A /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 34BF35AA148FA21100AFC17A /* libxml2.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +102,9 @@
 		34686866148F2C1C00A0189F /* LDTWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDTWidget.h; sourceTree = "<group>"; };
 		34686867148F2C1C00A0189F /* LDTWidget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDTWidget.m; sourceTree = "<group>"; };
 		34BF358A148F34F200AFC17A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		34BF35A7148F9E0F00AFC17A /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		34BF35A8148FA1C800AFC17A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		34BF35AA148FA21100AFC17A /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +112,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34BF35AB148FA21100AFC17A /* libxml2.dylib in Frameworks */,
+				34BF35A9148FA1C800AFC17A /* CoreData.framework in Frameworks */,
 				34BF358B148F34F200AFC17A /* Security.framework in Frameworks */,
 				34BF3587148F340100AFC17A /* libRestKit.a in Frameworks */,
 				3468685E148F2AA200A0189F /* CFNetwork.framework in Frameworks */,
@@ -154,6 +161,8 @@
 		3468680A148F23C200A0189F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				34BF35A8148FA1C800AFC17A /* CoreData.framework */,
+				34BF35AA148FA21100AFC17A /* libxml2.dylib */,
 				34BF358A148F34F200AFC17A /* Security.framework */,
 				3468685B148F2AA200A0189F /* CFNetwork.framework */,
 				3468685C148F2AA200A0189F /* MobileCoreServices.framework */,
@@ -169,6 +178,7 @@
 		34686811148F23C200A0189F /* ldtrkpoc1 */ = {
 			isa = PBXGroup;
 			children = (
+				34BF35A7148F9E0F00AFC17A /* Constants.h */,
 				3468681A148F23C200A0189F /* LDTAppDelegate.h */,
 				3468681B148F23C200A0189F /* LDTAppDelegate.m */,
 				3468681D148F23C200A0189F /* LDTViewController.h */,
@@ -485,7 +495,7 @@
 				GCC_PREFIX_HEADER = "ldtrkpoc1/ldtrkpoc1-Prefix.pch";
 				HEADER_SEARCH_PATHS = "$(SOURCE_ROOT)/RestKit/Build";
 				INFOPLIST_FILE = "ldtrkpoc1/ldtrkpoc1-Info.plist";
-				OTHER_LDFLAGS = "-Objc";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -498,7 +508,7 @@
 				GCC_PREFIX_HEADER = "ldtrkpoc1/ldtrkpoc1-Prefix.pch";
 				HEADER_SEARCH_PATHS = "$(SOURCE_ROOT)/RestKit/Build";
 				INFOPLIST_FILE = "ldtrkpoc1/ldtrkpoc1-Info.plist";
-				OTHER_LDFLAGS = "-Objc";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

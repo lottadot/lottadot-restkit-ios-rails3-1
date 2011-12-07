@@ -10,6 +10,7 @@
 
 @implementation LDTWidget
 
+@synthesize widgetID;
 @synthesize name;
 @synthesize summary;
 

@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <RestKit/RestKit.h>
 
-@interface LDTViewController : UIViewController
+@class LDTWidget;
 
+@interface LDTViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, RKObjectLoaderDelegate> {
+    UITableView  *_tableView;
+	NSArray *widgets;
+}
+
+//@property (nonatomic, retain) IBOutlet UITableView *_tableView;
 @end
