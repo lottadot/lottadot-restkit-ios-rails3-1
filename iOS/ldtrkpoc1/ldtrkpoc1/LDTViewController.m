@@ -15,6 +15,8 @@
 
 @implementation LDTViewController
 
+@synthesize _tableView;
+
 - (void)loadWidgets {
     // Load the object model via RestKit	
     RKObjectManager* objectManager = [RKObjectManager sharedManager];
@@ -36,6 +38,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"Lottadot Widgets";
 	[self loadWidgets];
 }
 
@@ -90,13 +93,6 @@
 	NSLog(@"Hit error: %@", error);
 }
 
-#pragma mark UITableViewDelegate methods
-
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-	CGSize size = [[[widgets objectAtIndex:indexPath.row] text] sizeWithFont:[UIFont systemFontOfSize:14] constrainedToSize:CGSizeMake(300, 9000)];
-	return size.height + 10;
-}
-
 #pragma mark UITableViewDataSource methods
 
 - (NSInteger)tableView:(UITableView *)table numberOfRowsInSection:(NSInteger)section {
@@ -106,15 +102,11 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *reuseIdentifier = @"CellIdentifier";
 
-	UITableViewCell* cell = (UITableViewCell *)[tableView dequeueReusableCellWithIdentifier:reuseIdentifier];
+	UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:reuseIdentifier];
 	if (nil == cell) {
 		cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseIdentifier];
-		cell.textLabel.font = [UIFont systemFontOfSize:14];
-		cell.textLabel.numberOfLines = 0;
-		cell.textLabel.backgroundColor = [UIColor clearColor];
-
 	}
-	cell.textLabel.text = @"foo"; //[[widgets objectAtIndex:indexPath.row] title];
+	cell.textLabel.text = [[widgets objectAtIndex:indexPath.row] title];
 	return cell;
 }
 

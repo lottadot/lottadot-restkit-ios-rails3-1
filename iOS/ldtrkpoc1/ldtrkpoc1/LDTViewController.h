@@ -16,5 +16,5 @@
 	NSArray *widgets;
 }
 
-//@property (nonatomic, retain) IBOutlet UITableView *_tableView;
+@property (nonatomic, retain) IBOutlet UITableView *_tableView;
 @end
