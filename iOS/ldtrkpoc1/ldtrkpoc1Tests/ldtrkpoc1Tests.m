@@ -3,7 +3,7 @@
 //  ldtrkpoc1Tests
 //
 //  Created by Shane Zatezalo on 12/6/11.
-//  Copyright (c) 2011 Personal. All rights reserved.
+//  Copyright (c) 2011 Lottadot LLC. All rights reserved.
 //
 
 #import "ldtrkpoc1Tests.h"
