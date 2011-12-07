@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3468680C148F23C200A0189F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3468680B148F23C200A0189F /* UIKit.framework */; };
+		3468680E148F23C200A0189F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3468680D148F23C200A0189F /* Foundation.framework */; };
+		34686810148F23C200A0189F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3468680F148F23C200A0189F /* CoreGraphics.framework */; };
+		34686816148F23C200A0189F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 34686814148F23C200A0189F /* InfoPlist.strings */; };
+		34686818148F23C200A0189F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34686817148F23C200A0189F /* main.m */; };
+		3468681C148F23C200A0189F /* LDTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3468681B148F23C200A0189F /* LDTAppDelegate.m */; };
+		3468681F148F23C200A0189F /* LDTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3468681E148F23C200A0189F /* LDTViewController.m */; };
+		34686822148F23C200A0189F /* LDTViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34686820148F23C200A0189F /* LDTViewController.xib */; };
+		3468682A148F23C200A0189F /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34686829148F23C200A0189F /* SenTestingKit.framework */; };
+		3468682B148F23C200A0189F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3468680B148F23C200A0189F /* UIKit.framework */; };
+		3468682C148F23C200A0189F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3468680D148F23C200A0189F /* Foundation.framework */; };
+		34686834148F23C200A0189F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 34686832148F23C200A0189F /* InfoPlist.strings */; };
+		34686837148F23C200A0189F /* ldtrkpoc1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 34686836148F23C200A0189F /* ldtrkpoc1Tests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3468682D148F23C200A0189F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 346867FE148F23C200A0189F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34686806148F23C200A0189F;
+			remoteInfo = ldtrkpoc1;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		34686807148F23C200A0189F /* ldtrkpoc1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ldtrkpoc1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3468680B148F23C200A0189F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3468680D148F23C200A0189F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3468680F148F23C200A0189F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		34686813148F23C200A0189F /* ldtrkpoc1-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ldtrkpoc1-Info.plist"; sourceTree = "<group>"; };
+		34686815148F23C200A0189F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		34686817148F23C200A0189F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		34686819148F23C200A0189F /* ldtrkpoc1-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ldtrkpoc1-Prefix.pch"; sourceTree = "<group>"; };
+		3468681A148F23C200A0189F /* LDTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDTAppDelegate.h; sourceTree = "<group>"; };
+		3468681B148F23C200A0189F /* LDTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDTAppDelegate.m; sourceTree = "<group>"; };
+		3468681D148F23C200A0189F /* LDTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDTViewController.h; sourceTree = "<group>"; };
+		3468681E148F23C200A0189F /* LDTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDTViewController.m; sourceTree = "<group>"; };
+		34686821148F23C200A0189F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/LDTViewController.xib; sourceTree = "<group>"; };
+		34686828148F23C200A0189F /* ldtrkpoc1Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ldtrkpoc1Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		34686829148F23C200A0189F /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		34686831148F23C200A0189F /* ldtrkpoc1Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ldtrkpoc1Tests-Info.plist"; sourceTree = "<group>"; };
+		34686833148F23C200A0189F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		34686835148F23C200A0189F /* ldtrkpoc1Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ldtrkpoc1Tests.h; sourceTree = "<group>"; };
+		34686836148F23C200A0189F /* ldtrkpoc1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ldtrkpoc1Tests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		34686804148F23C200A0189F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3468680C148F23C200A0189F /* UIKit.framework in Frameworks */,
+				3468680E148F23C200A0189F /* Foundation.framework in Frameworks */,
+				34686810148F23C200A0189F /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34686824148F23C200A0189F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3468682A148F23C200A0189F /* SenTestingKit.framework in Frameworks */,
+				3468682B148F23C200A0189F /* UIKit.framework in Frameworks */,
+				3468682C148F23C200A0189F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		346867FC148F23C200A0189F = {
+			isa = PBXGroup;
+			children = (
+				34686811148F23C200A0189F /* ldtrkpoc1 */,
+				3468682F148F23C200A0189F /* ldtrkpoc1Tests */,
+				3468680A148F23C200A0189F /* Frameworks */,
+				34686808148F23C200A0189F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		34686808148F23C200A0189F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				34686807148F23C200A0189F /* ldtrkpoc1.app */,
+				34686828148F23C200A0189F /* ldtrkpoc1Tests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3468680A148F23C200A0189F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3468680B148F23C200A0189F /* UIKit.framework */,
+				3468680D148F23C200A0189F /* Foundation.framework */,
+				3468680F148F23C200A0189F /* CoreGraphics.framework */,
+				34686829148F23C200A0189F /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		34686811148F23C200A0189F /* ldtrkpoc1 */ = {
+			isa = PBXGroup;
+			children = (
+				3468681A148F23C200A0189F /* LDTAppDelegate.h */,
+				3468681B148F23C200A0189F /* LDTAppDelegate.m */,
+				3468681D148F23C200A0189F /* LDTViewController.h */,
+				3468681E148F23C200A0189F /* LDTViewController.m */,
+				34686820148F23C200A0189F /* LDTViewController.xib */,
+				34686812148F23C200A0189F /* Supporting Files */,
+			);
+			path = ldtrkpoc1;
+			sourceTree = "<group>";
+		};
+		34686812148F23C200A0189F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				34686813148F23C200A0189F /* ldtrkpoc1-Info.plist */,
+				34686814148F23C200A0189F /* InfoPlist.strings */,
+				34686817148F23C200A0189F /* main.m */,
+				34686819148F23C200A0189F /* ldtrkpoc1-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3468682F148F23C200A0189F /* ldtrkpoc1Tests */ = {
+			isa = PBXGroup;
+			children = (
+				34686835148F23C200A0189F /* ldtrkpoc1Tests.h */,
+				34686836148F23C200A0189F /* ldtrkpoc1Tests.m */,
+				34686830148F23C200A0189F /* Supporting Files */,
+			);
+			path = ldtrkpoc1Tests;
+			sourceTree = "<group>";
+		};
+		34686830148F23C200A0189F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				34686831148F23C200A0189F /* ldtrkpoc1Tests-Info.plist */,
+				34686832148F23C200A0189F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		34686806148F23C200A0189F /* ldtrkpoc1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3468683A148F23C200A0189F /* Build configuration list for PBXNativeTarget "ldtrkpoc1" */;
+			buildPhases = (
+				34686803148F23C200A0189F /* Sources */,
+				34686804148F23C200A0189F /* Frameworks */,
+				34686805148F23C200A0189F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ldtrkpoc1;
+			productName = ldtrkpoc1;
+			productReference = 34686807148F23C200A0189F /* ldtrkpoc1.app */;
+			productType = "com.apple.product-type.application";
+		};
+		34686827148F23C200A0189F /* ldtrkpoc1Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3468683D148F23C200A0189F /* Build configuration list for PBXNativeTarget "ldtrkpoc1Tests" */;
+			buildPhases = (
+				34686823148F23C200A0189F /* Sources */,
+				34686824148F23C200A0189F /* Frameworks */,
+				34686825148F23C200A0189F /* Resources */,
+				34686826148F23C200A0189F /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3468682E148F23C200A0189F /* PBXTargetDependency */,
+			);
+			name = ldtrkpoc1Tests;
+			productName = ldtrkpoc1Tests;
+			productReference = 34686828148F23C200A0189F /* ldtrkpoc1Tests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		346867FE148F23C200A0189F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = Personal;
+			};
+			buildConfigurationList = 34686801148F23C200A0189F /* Build configuration list for PBXProject "ldtrkpoc1" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 346867FC148F23C200A0189F;
+			productRefGroup = 34686808148F23C200A0189F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				34686806148F23C200A0189F /* ldtrkpoc1 */,
+				34686827148F23C200A0189F /* ldtrkpoc1Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		34686805148F23C200A0189F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34686816148F23C200A0189F /* InfoPlist.strings in Resources */,
+				34686822148F23C200A0189F /* LDTViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34686825148F23C200A0189F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34686834148F23C200A0189F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		34686826148F23C200A0189F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		34686803148F23C200A0189F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34686818148F23C200A0189F /* main.m in Sources */,
+				3468681C148F23C200A0189F /* LDTAppDelegate.m in Sources */,
+				3468681F148F23C200A0189F /* LDTViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34686823148F23C200A0189F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34686837148F23C200A0189F /* ldtrkpoc1Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3468682E148F23C200A0189F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 34686806148F23C200A0189F /* ldtrkpoc1 */;
+			targetProxy = 3468682D148F23C200A0189F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		34686814148F23C200A0189F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34686815148F23C200A0189F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		34686820148F23C200A0189F /* LDTViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34686821148F23C200A0189F /* en */,
+			);
+			name = LDTViewController.xib;
+			sourceTree = "<group>";
+		};
+		34686832148F23C200A0189F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34686833148F23C200A0189F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		34686838148F23C200A0189F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		34686839148F23C200A0189F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3468683B148F23C200A0189F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ldtrkpoc1/ldtrkpoc1-Prefix.pch";
+				INFOPLIST_FILE = "ldtrkpoc1/ldtrkpoc1-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3468683C148F23C200A0189F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ldtrkpoc1/ldtrkpoc1-Prefix.pch";
+				INFOPLIST_FILE = "ldtrkpoc1/ldtrkpoc1-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		3468683E148F23C200A0189F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ldtrkpoc1.app/ldtrkpoc1";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ldtrkpoc1/ldtrkpoc1-Prefix.pch";
+				INFOPLIST_FILE = "ldtrkpoc1Tests/ldtrkpoc1Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		3468683F148F23C200A0189F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ldtrkpoc1.app/ldtrkpoc1";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ldtrkpoc1/ldtrkpoc1-Prefix.pch";
+				INFOPLIST_FILE = "ldtrkpoc1Tests/ldtrkpoc1Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		34686801148F23C200A0189F /* Build configuration list for PBXProject "ldtrkpoc1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34686838148F23C200A0189F /* Debug */,
+				34686839148F23C200A0189F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3468683A148F23C200A0189F /* Build configuration list for PBXNativeTarget "ldtrkpoc1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3468683B148F23C200A0189F /* Debug */,
+				3468683C148F23C200A0189F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3468683D148F23C200A0189F /* Build configuration list for PBXNativeTarget "ldtrkpoc1Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3468683E148F23C200A0189F /* Debug */,
+				3468683F148F23C200A0189F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 346867FE148F23C200A0189F /* Project object */;
+}
