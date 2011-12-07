@@ -7,8 +7,8 @@
 //
 
 #import "LDTAppDelegate.h"
-
 #import "LDTViewController.h"
+#import <RestKit/RestKit.h>
 
 @implementation LDTAppDelegate
 
@@ -22,6 +22,14 @@
     self.viewController = [[LDTViewController alloc] initWithNibName:@"LDTViewController" bundle:nil];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
+    
+    //Setup Restkit
+    RKClient *client = [RKClient clientWithBaseURL:@"http://localhost:3000"];
+    RKLogConfigureByName("RestKit/Network", RKLogLevelDebug);
+    RKLogInfo(@"Configured RestKit Client: %@", client);
+    // Enable automatic network activity indicator management
+    client.requestQueue.showsNetworkActivityIndicatorWhenBusy = YES;
+
     return YES;
 }
 

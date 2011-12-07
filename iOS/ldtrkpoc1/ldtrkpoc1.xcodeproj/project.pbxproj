@@ -20,10 +20,12 @@
 		3468682C148F23C200A0189F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3468680D148F23C200A0189F /* Foundation.framework */; };
 		34686834148F23C200A0189F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 34686832148F23C200A0189F /* InfoPlist.strings */; };
 		34686837148F23C200A0189F /* ldtrkpoc1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 34686836148F23C200A0189F /* ldtrkpoc1Tests.m */; };
-		3468685A148F2A5800A0189F /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 34686851148F296900A0189F /* libRestKit.a */; };
 		3468685E148F2AA200A0189F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3468685B148F2AA200A0189F /* CFNetwork.framework */; };
 		3468685F148F2AA200A0189F /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3468685C148F2AA200A0189F /* MobileCoreServices.framework */; };
 		34686860148F2AA200A0189F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3468685D148F2AA200A0189F /* SystemConfiguration.framework */; };
+		34686868148F2C1C00A0189F /* LDTWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = 34686867148F2C1C00A0189F /* LDTWidget.m */; };
+		34BF3587148F340100AFC17A /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 34686851148F296900A0189F /* libRestKit.a */; };
+		34BF358B148F34F200AFC17A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34BF358A148F34F200AFC17A /* Security.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +64,7 @@
 			remoteGlobalIDString = 25160E78145651060060A5C5;
 			remoteInfo = RestKitFrameworkTests;
 		};
-		34686858148F2A2C00A0189F /* PBXContainerItemProxy */ = {
+		34BF3588148F34B800AFC17A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 34686846148F296800A0189F /* RestKit.xcodeproj */;
 			proxyType = 1;
@@ -95,6 +97,9 @@
 		3468685B148F2AA200A0189F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		3468685C148F2AA200A0189F /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		3468685D148F2AA200A0189F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		34686866148F2C1C00A0189F /* LDTWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDTWidget.h; sourceTree = "<group>"; };
+		34686867148F2C1C00A0189F /* LDTWidget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDTWidget.m; sourceTree = "<group>"; };
+		34BF358A148F34F200AFC17A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +107,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34BF358B148F34F200AFC17A /* Security.framework in Frameworks */,
+				34BF3587148F340100AFC17A /* libRestKit.a in Frameworks */,
 				3468685E148F2AA200A0189F /* CFNetwork.framework in Frameworks */,
 				3468685F148F2AA200A0189F /* MobileCoreServices.framework in Frameworks */,
 				34686860148F2AA200A0189F /* SystemConfiguration.framework in Frameworks */,
-				3468685A148F2A5800A0189F /* libRestKit.a in Frameworks */,
 				3468680C148F23C200A0189F /* UIKit.framework in Frameworks */,
 				3468680E148F23C200A0189F /* Foundation.framework in Frameworks */,
 				34686810148F23C200A0189F /* CoreGraphics.framework in Frameworks */,
@@ -148,6 +154,7 @@
 		3468680A148F23C200A0189F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				34BF358A148F34F200AFC17A /* Security.framework */,
 				3468685B148F2AA200A0189F /* CFNetwork.framework */,
 				3468685C148F2AA200A0189F /* MobileCoreServices.framework */,
 				3468685D148F2AA200A0189F /* SystemConfiguration.framework */,
@@ -167,6 +174,8 @@
 				3468681D148F23C200A0189F /* LDTViewController.h */,
 				3468681E148F23C200A0189F /* LDTViewController.m */,
 				34686820148F23C200A0189F /* LDTViewController.xib */,
+				34686866148F2C1C00A0189F /* LDTWidget.h */,
+				34686867148F2C1C00A0189F /* LDTWidget.m */,
 				34686812148F23C200A0189F /* Supporting Files */,
 			);
 			path = ldtrkpoc1;
@@ -235,7 +244,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				34686859148F2A2C00A0189F /* PBXTargetDependency */,
+				34BF3589148F34B800AFC17A /* PBXTargetDependency */,
 			);
 			name = ldtrkpoc1;
 			productName = ldtrkpoc1;
@@ -369,6 +378,7 @@
 				34686818148F23C200A0189F /* main.m in Sources */,
 				3468681C148F23C200A0189F /* LDTAppDelegate.m in Sources */,
 				3468681F148F23C200A0189F /* LDTViewController.m in Sources */,
+				34686868148F2C1C00A0189F /* LDTWidget.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,10 +398,10 @@
 			target = 34686806148F23C200A0189F /* ldtrkpoc1 */;
 			targetProxy = 3468682D148F23C200A0189F /* PBXContainerItemProxy */;
 		};
-		34686859148F2A2C00A0189F /* PBXTargetDependency */ = {
+		34BF3589148F34B800AFC17A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = RestKit;
-			targetProxy = 34686858148F2A2C00A0189F /* PBXContainerItemProxy */;
+			targetProxy = 34BF3588148F34B800AFC17A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
