@@ -37,6 +37,9 @@
     // Enable automatic network activity indicator management
     objectManager.client.requestQueue.showsNetworkActivityIndicatorWhenBusy = YES;
     
+    objectManager.acceptMIMEType = RKMIMETypeJSON; 
+    objectManager.serializationMIMEType = RKMIMETypeJSON;
+    
     RKObjectMapping *widgetMapping = [RKObjectMapping mappingForClass:[LDTWidget class]];
 //    [widgetMapping mapKeyPath:@"id" toAttribute:@"widgetID"];
 //    [widgetMapping mapKeyPath:@"title" toAttribute:@"title"];
@@ -48,7 +51,32 @@
      nil];
     [widgetMapping mapRelationship:@"widget" withMapping:widgetMapping];
     
-    [objectManager.mappingProvider setMapping:widgetMapping forKeyPath:@"widget"];
+    // On a Widget POST the forKeyPath must be @"" rather then @"/widgets"
+    [objectManager.mappingProvider setMapping:widgetMapping forKeyPath:@""];
+    
+    // Configure the Serialization mapping for a Widget. Without this a PostObject will fail
+    // This post was helpful: https://groups.google.com/group/restkit/browse_frm/thread/959b6e30c86d257f/e0bc0a37b46c18a5?lnk=gst&q=You+must+provide+a+serialization+mapping+for+objects+of+type#e0bc0a37b46c18a5
+    RKObjectMapping *widgetSerializationMapping = [RKObjectMapping 
+                                                    mappingForClass:[LDTWidget class]]; 
+    [widgetSerializationMapping mapKeyPath:@"widgetID" 
+                                toAttribute:@"id"]; 
+    [widgetSerializationMapping mapKeyPath:@"title" 
+                                toAttribute:@"title"]; 
+    [widgetSerializationMapping mapKeyPath:@"summary" 
+                                toAttribute:@"summary"]; 
+
+    [objectManager.mappingProvider 
+     setSerializationMapping:widgetSerializationMapping forClass:[LDTWidget class]];
+    
+    
+    
+    // Configure a default resource path for Widgets. 
+    // Will send GET, PUT, and DELETE requests to '/widgets/XXXX'
+    // widgetID is a property on the Widget class
+    [objectManager.router routeClass:[LDTWidget class] toResourcePath:@"/widgets/:widgetID"];
+    
+    // Send POST requests for instances of Widget to '/widgets'
+    [objectManager.router routeClass:[LDTWidget class] toResourcePath:@"/widgets" forMethod:RKRequestMethodPOST];
     
     [self.window makeKeyAndVisible];
     return YES;

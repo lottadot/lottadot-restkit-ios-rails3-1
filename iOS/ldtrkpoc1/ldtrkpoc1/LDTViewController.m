@@ -110,5 +110,17 @@
 	return cell;
 }
 
+#pragma mark Action methods
+
+-(IBAction)newButtonClicked:(id)sender {
+    LDTWidget *newWidget = [LDTWidget new];
+    newWidget.title = @"some title";
+    newWidget.summary = @"some summary";
+    
+    // Send a POST to /widgets to create the remote instance
+    [ [RKObjectManager sharedManager] postObject:newWidget delegate:self];
+
+    
+}
 
 @end
