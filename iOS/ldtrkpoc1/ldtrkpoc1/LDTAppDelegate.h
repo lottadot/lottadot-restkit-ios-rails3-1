@@ -16,4 +16,6 @@
 
 @property (strong, nonatomic) LDTViewController *viewController;
 
+#define ApplicationDelegate ((LDTAppDelegate *)[UIApplication sharedApplication].delegate)
+
 @end

@@ -26,7 +26,8 @@
 
 - (void)testExample
 {
-    STFail(@"Unit tests are not implemented yet in ldtrkpoc1Tests");
+    //TODO: Add real tests
+    STAssertNotNil(ApplicationDelegate,@"Self should not be nil"); 
 }
 
 @end
